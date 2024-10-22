@@ -1,47 +1,72 @@
+/* Estilo del contenedor de contacto */
+.contact-form {
+  background-color: #1f1f1f;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+/* Título con degradado */
+.text-gradient {
+  background: linear-gradient(45deg, #4caf50, #8bc34a);
+  -webkit-background-clip: text;
+  background-clip: text; /* Definición estándar */
+  color: transparent;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Estilos de los campos de formulario */
+.form-control {
+  background-color: #2a2a2a;
+  border: 2px solid #4caf50;
+  color: #cfd8dc;
+  padding: 10px;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+/* Color del placeholder */
+.form-control::placeholder {
+  color: #a0a0a0;
+  opacity: 1;
+}
+
+/* Cambios en el focus */
+.form-control:focus {
+  color: #fff;
+  border-color: #8bc34a;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Estilo del botón */
+.btn-success {
+  background-color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #fff;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+/* Ajustes de espaciado */
+.form-group {
+  margin-bottom: 20px;
+}
+
 .container {
-    max-width: 700px;
-  }
-  
-  .bg-dark-light {
-    background-color: #2e2e2e;
-  }
-  
-  .text-gradient {
-    background: linear-gradient(45deg, #4caf50, #8bc34a);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-  
-  .form-label {
-    color: #cfd8dc;
-  }
-  
-  .form-control {
-    background-color: #3d3d3d;
-    color: white;
-    border: 1px solid #4caf50;
-  }
-  
-  .form-control:focus {
-    background-color: #3d3d3d;
-    color: white;
-    border-color: #8bc34a;
-    box-shadow: none;
-  }
-  
-  .form-check-input:checked {
-    background-color: #4caf50;
-    border-color: #4caf50;
-  }
-  
-  .btn-success {
-    background-color: #4caf50;
-    border: none;
-  }
-  
-  .btn-success:hover {
-    background-color: #388e3c;
-  }
-  
-  
+  max-width: 600px;
+  margin: auto;
+}
+
+textarea.form-control {
+  resize: none;
+}
