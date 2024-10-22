@@ -1,0 +1,67 @@
+/* Fondo oscuro para todo el componente product */
+.product-section,
+.feature-cards {
+  background-color: #1f1f1f !important;
+  color: white !important;
+}
+
+/* Product Section */
+.product-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.product-section h1 {
+  color: #4caf50;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.product-section p {
+  color: #cfd8dc;
+  margin-top: 15px;
+}
+
+.product-section .btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.product-section .btn:hover {
+  background-color: white;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+/* Características del Producto */
+.feature-cards {
+  padding: 80px 0;
+}
+
+.feature-cards h3 {
+  color: #4caf50;
+}
+
+.feature-cards p {
+  color: #cfd8dc;
+}
+
+/* Imagen sin sombras */
+.img-fluid, .parallax-img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease, padding 0.5s ease;
+}
+
+.parallax-img:hover {
+  padding: 20px;
+  transform: scale(1.05);
+}
+
+
+

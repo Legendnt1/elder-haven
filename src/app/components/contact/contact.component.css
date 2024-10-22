@@ -1,0 +1,47 @@
+.container {
+    max-width: 700px;
+  }
+  
+  .bg-dark-light {
+    background-color: #2e2e2e;
+  }
+  
+  .text-gradient {
+    background: linear-gradient(45deg, #4caf50, #8bc34a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .form-label {
+    color: #cfd8dc;
+  }
+  
+  .form-control {
+    background-color: #3d3d3d;
+    color: white;
+    border: 1px solid #4caf50;
+  }
+  
+  .form-control:focus {
+    background-color: #3d3d3d;
+    color: white;
+    border-color: #8bc34a;
+    box-shadow: none;
+  }
+  
+  .form-check-input:checked {
+    background-color: #4caf50;
+    border-color: #4caf50;
+  }
+  
+  .btn-success {
+    background-color: #4caf50;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #388e3c;
+  }
+  
+  

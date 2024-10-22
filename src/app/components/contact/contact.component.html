@@ -1,0 +1,94 @@
+<div class="container my-5">
+    <h2 class="text-center text-gradient">Contáctanos</h2>
+    
+    <form class="bg-dark-light text-light p-5 rounded shadow-lg">
+      <!-- Nombre completo -->
+      <div class="mb-3">
+        <label for="nombreCompleto" class="form-label">Nombre Completo</label>
+        <input type="text" class="form-control" id="nombreCompleto" placeholder="Ingresa tu nombre completo" required>
+      </div>
+  
+      <!-- Correo electrónico -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+      </div>
+  
+      <!-- Teléfono -->
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Número de Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono" required>
+      </div>
+  
+      <!-- Dirección -->
+      <div class="mb-3">
+        <label for="direccion" class="form-label">Dirección</label>
+        <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu dirección" required>
+      </div>
+  
+      <!-- Selección de país -->
+      <div class="mb-3">
+        <label for="pais" class="form-label">País</label>
+        <select id="pais" class="form-select" required>
+          <option selected disabled value="">Selecciona tu país</option>
+          <option value="Perú">Perú</option>
+          <option value="México">México</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Chile">Chile</option>
+        </select>
+      </div>
+  
+      <!-- Área de mensaje -->
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      </div>
+  
+      <!-- Selección de interés -->
+      <div class="mb-3">
+        <label class="form-label">¿En qué estás interesado?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="producto" id="producto">
+          <label class="form-check-label" for="producto">Producto</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="soporte" id="soporte">
+          <label class="form-check-label" for="soporte">Soporte Técnico</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="otros" id="otros">
+          <label class="form-check-label" for="otros">Otros</label>
+        </div>
+      </div>
+  
+      <!-- Preferencia de contacto -->
+      <div class="mb-3">
+        <label class="form-label">¿Cómo prefieres que te contactemos?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="contactoPreferencia" id="contactoEmail" value="email" checked>
+          <label class="form-check-label" for="contactoEmail">Correo Electrónico</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="contactoPreferencia" id="contactoTelefono" value="telefono">
+          <label class="form-check-label" for="contactoTelefono">Teléfono</label>
+        </div>
+      </div>
+  
+      <!-- Fecha de contacto preferida -->
+      <div class="mb-3">
+        <label for="fechaPreferida" class="form-label">Fecha preferida para contacto</label>
+        <input type="date" class="form-control" id="fechaPreferida" required>
+      </div>
+  
+      <!-- Aceptación de términos -->
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="aceptoTerminos" required>
+        <label class="form-check-label" for="aceptoTerminos">Acepto los términos y condiciones</label>
+      </div>
+  
+      <!-- Botón de envío -->
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+  </div>
+  

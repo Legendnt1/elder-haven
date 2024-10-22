@@ -1,0 +1,130 @@
+/* Fondo general */
+html, body {
+  background-color: #1f1f1f;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo oscuro para todas las secciones */
+.hero-section,
+.feature-cards,
+.faq-section {
+  background-color: #1f1f1f !important;
+  color: white !important;
+}
+
+/* Hero Section */
+.hero-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  color: #4caf50;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  color: #cfd8dc;
+  margin-top: 15px;
+}
+
+.hero-section .btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.hero-section .btn:hover {
+  background-color: white;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+/* Features Section */
+.feature-cards {
+  padding: 80px 0;
+}
+
+.feature-cards ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feature-cards li {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.feature-cards li i {
+  color: #4caf50;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 40px;
+}
+
+.faq-title {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-button {
+  width: 100%;
+  background-color: #1f1f1f;
+  color: #4caf50;
+  padding: 15px;
+  border: none;
+  font-size: 1.1rem;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.faq-button:hover {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.faq-content {
+  padding: 15px;
+  background-color: #2e2e2e;
+  color: #ffffff;
+  display: none;
+  margin-top: 5px;
+}
+
+.faq-content.show {
+  display: block;
+}
+
+/* Imagen sin sombras */
+.img-fluid, .parallax-img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease, padding 0.5s ease;
+}
+
+.parallax-img:hover {
+  padding: 20px;  /* Generar padding dinámico en hover */
+  transform: scale(1.05);
+}
