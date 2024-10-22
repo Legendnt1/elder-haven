@@ -1,72 +1,130 @@
-/* Estilo del contenedor de contacto */
-.contact-form {
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #1f1f1f;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transition: all 0.3s ease;
+  margin-top: 100px; /* Ajusta este valor según el tamaño de tu header */
+  padding-top: 20px; /* Para dar un poco de espacio adicional */
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #cfd8dc;
+  transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.lead:hover {
+  font-size: 1.6rem;
   color: #ffffff;
 }
 
-/* Título con degradado */
-.text-gradient {
-  background: linear-gradient(45deg, #4caf50, #8bc34a);
-  -webkit-background-clip: text;
-  background-clip: text; /* Definición estándar */
-  color: transparent;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-/* Estilos de los campos de formulario */
-.form-control {
-  background-color: #2a2a2a;
-  border: 2px solid #4caf50;
-  color: #cfd8dc;
-  padding: 10px;
-  border-radius: 8px;
-  transition: border-color 0.3s ease;
-}
-
-/* Color del placeholder */
-.form-control::placeholder {
-  color: #a0a0a0;
-  opacity: 1;
-}
-
-/* Cambios en el focus */
-.form-control:focus {
-  color: #fff;
-  border-color: #8bc34a;
-  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
-}
-
-/* Estilo del botón */
-.btn-success {
-  background-color: #4caf50;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn-success:hover {
-  background-color: #fff;
-  color: #4caf50;
-  border: 2px solid #4caf50;
-}
-
-/* Ajustes de espaciado */
 .form-group {
   margin-bottom: 20px;
 }
 
-.container {
-  max-width: 600px;
-  margin: auto;
+.form-control {
+  border: 1px solid #4caf50;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+  background-color: #333;
+}
+
+.form-check-label {
+  margin-left: 10px;
+  color: #cfd8dc;
+}
+
+.btn {
+  background-color: #4caf50;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.3rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #388e3c;
+  box-shadow: 0 8px 16px rgba(0, 255, 0, 0.2);
 }
 
 textarea.form-control {
   resize: none;
 }
+
+.form-check-input {
+  background-color: #2e2e2e;
+  border: 1px solid #4caf50;
+}
+
+select.form-control {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;base64,...') no-repeat right;
+  background-color: #2e2e2e;
+  border: 1px solid #4caf50;
+  padding: 12px;
+}
+
+.form-control:disabled, .form-control[readonly] {
+  background-color: #333;
+  opacity: 1;
+}
+
+label {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* Ajustes de tamaño para dispositivos móviles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1.4rem;
+  }
+}
+
